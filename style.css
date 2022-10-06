@@ -1,0 +1,109 @@
+body{
+
+    width: 800px;
+    background-color: aquamarine;
+    color: black;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    border: 5px solid black;
+    
+}
+
+img{
+    display: block; 
+    margin: auto;
+}
+
+p#t {
+    font-size: 20px;
+    font-family: "Bahnschrift";
+    color: black;
+    margin: 10px;
+    text-align: justify;
+}
+
+h2 {
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav {
+    background-color: black;
+    padding: 0 1px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h1, p {
+    color: white;
+}
+
+nav, ul {
+display: flex;
+flex-direction: row;
+}
+
+li {
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+button {
+background-color: transparent;
+border: none;
+color: white;
+font-size: 36px;
+position: absolute;
+right: 10px;
+top: 10px;
+display: none;
+}
+
+li:hover, button:hover {
+cursor: pointer;
+opacity: 0.8;
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus ~ ul {
+    height: 260px;
+}
+
+@media (max-width: 850px) {
+    nav, ul {
+        flex-direction: column;
+    }
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    nav {
+        padding-left: 0; 
+        align-items: flex-start;
+    }
+    h1 {
+        margin: 10px;
+    }
+    button {
+        display: flex;
+
+    } 
+    li, ul {
+        width: 100%;
+    }
+}
